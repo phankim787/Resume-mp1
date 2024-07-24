@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #111;
+
+}
+html{
+    height: 100%;
+    min-height: 100%;
+}
+
+/*default, for screens bigger than 750px*/
+main {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    /*text-align: center;*/
+    align-items: center;
+    flex-direction: column;
+    /*float: right;*/
+    background: indianred;
+}
+/*for screens smaller than 750px*/
+@media screen and (max-width: 750px){
+    main{
+        max-width: 100%;
+        height: 100%;
+        align-content: center;
+        display: flex;
+    }
+    body{
+        height: 100%;
+    }
+    .content{
+        display: flex;
+    }
+}
+
+/* removes the bullet points */
+ul{
+    list-style-type: none;
+
+}
+/*Screens bigger than 750px, this is default */
+header{
+    text-align: left;
+    width: 100%;
+    /*padding: 20px;*/
+    background-color: deepskyblue;
+    color: #111;
+    border: 1px solid black;
+}
+
+/* CSS applied for screens 750 or narrower */
+@media screen and (max-width: 750px){
+    header{
+        text-align: center;
+        background-color: deepskyblue;
+    }
+    html{
+        min-height: 100%;
+        height: 100%;
+    }
+}
+
+/* for screens bigger than 750-px, this is default */
+nav{
+    max-width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    /*margin-bottom: 20px;*/
+    background: coral;
+    /*width: 100%;*/
+}
+/*nav menu*/
+nav ul {
+    max-width: 100%;
+    display: inline;
+    /*flex-wrap: wrap;*/
+    /*flex-direction: column;*/
+}
+/*  */
+nav ul li {
+    text-align: center;
+    max-width: 100%;
+    width: auto;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+nav ul li a {
+
+    text-align: center;
+}
+
+
+/*screens smaller than 750px */
+@media screen and (max-width: 750px){
+    nav{
+        display: flex;
+        flex-direction: row;
+        background: coral;
+        justify-content: space-evenly;
+        max-width: 100%;
+        margin: auto;
+
+    }
+    nav ul{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        max-width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+        flex: 1;
+    }
+    nav ul li{
+        padding: 5px;
+        margin: 0 auto;
+        font-size: 2vw;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid black;
+        background: lightskyblue;
+
+        flex: 1;
+        max-width: 100%;
+    }
+    nav ul li a{
+        width: 100%;
+    }
+
+}
+
+nav ul li{
+    padding: 10px;
+    margin: 10px 0;
+    /*box-sizing: border-box;*/
+    border: 1px solid black;
+    background: lightskyblue;
+    flex: 1;
+}
+
+.wrapper{
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    margin: auto;
+    width: 80%;
+    min-height: 100%;
+    height: 100%;
+    background: pink;
+    /*border: 3px solid orchid;*/
+    /*flex-direction: row*/
+}
+/*when screen smaller than 750px*/
+@media screen and (max-width: 750px){
+    .wrapper{
+
+    }
+    .content-header{
+        display: block;
+        border: 1px solid black;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+
+footer{
+    max-width: 100%;
+    background: deepskyblue;
+    text-align: center;
+    border: 1px solid black;
+
+}
+.content {
+    display: inline;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+}
+
+.buttons{
+    display: inline-flex;
+    padding: 5%;
+    /*margin: auto;*/
+}
+button{
+    width: auto;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
